@@ -872,7 +872,12 @@ def plot_results(img, results):
             color=color,
             relative_coords=False,
         )
-    plt.show()
+    plt.savefig(
+        "output.png",
+        dpi=300,               # 分辨率
+        bbox_inches="tight",   # 自动裁掉多余的白边
+        transparent=False      # True 时背景透明
+    )
 
 
 def single_visualization(img, anns, title):
