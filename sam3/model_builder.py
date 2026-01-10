@@ -560,8 +560,8 @@ def build_sam3_image_model(
     bpe_path=None,
     device="cuda" if torch.cuda.is_available() else "cpu",
     eval_mode=True,
-    checkpoint_path=None,
-    load_from_HF=True,
+    checkpoint_path="sam3.pt",
+    load_from_HF=False,
     enable_segmentation=True,
     enable_inst_interactivity=False,
     compile=False,
@@ -650,8 +650,8 @@ def download_ckpt_from_hf():
 
 
 def build_sam3_video_model(
-    checkpoint_path: Optional[str] = None,
-    load_from_HF=True,
+    checkpoint_path: Optional[str] = "sam3.pt",
+    load_from_HF=False,
     bpe_path: Optional[str] = None,
     has_presence_token: bool = True,
     geo_encoder_use_img_cross_attn: bool = True,

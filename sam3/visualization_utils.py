@@ -872,6 +872,7 @@ def plot_results(img, results):
             color=color,
             relative_coords=False,
         )
+    plt.show()
 
 
 def single_visualization(img, anns, title):
