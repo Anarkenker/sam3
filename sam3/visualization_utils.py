@@ -873,7 +873,7 @@ def plot_results(img, results):
             relative_coords=False,
         )
     plt.savefig(
-        "output.png",
+        "output.jpg",
         dpi=300,               # 分辨率
         bbox_inches="tight",   # 自动裁掉多余的白边
         transparent=False      # True 时背景透明
